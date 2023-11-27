@@ -82,7 +82,7 @@ export const handler = async (event, context) => {
       // Email user the status of download
       emailStatus = await sendEmailUsingSES(domainName, email, name, submission_url, filePath, fileName);
     // }
-    // Track emails sent in DynamoDB
+    
      trackEmails = await trackEmailInDynamoDB(emailStatus, email);
 
     return 'Success';
