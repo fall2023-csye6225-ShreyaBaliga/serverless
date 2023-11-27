@@ -5,7 +5,7 @@ This Lambda function is designed to be triggered by an SNS (Simple Notification 
 # 1. GitHub Release Download and Storage in Google Cloud Storage Bucket
 Upon invocation, the Lambda function will download the specified release from the GitHub repository. The downloaded release will then be stored in a designated Google Cloud Storage (GCS) Bucket, ensuring secure and scalable storage of the release artifacts.
 
-# 2. Email Notification to User
+# 2 Email Notification to User
 After successfully downloading and storing the release, the Lambda function will send an email to the user providing the status of the download. This email notification serves to keep the user informed about the progress and outcome of the release retrieval process.
 
 # 3.Email Tracking in DynamoDB
